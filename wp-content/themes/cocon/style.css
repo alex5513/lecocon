@@ -1,0 +1,58 @@
+/*
+Theme Name: Le Cocon
+Theme URI: http://wordpress.bbxdesign.com
+Description: Thème Désert WordPress
+Version: 2.0
+Author: bbx
+Author URI: http://bbxdesign.com
+Tags: empty, full-width, simple, white
+
+  bbxdesert
+  http://wordpress.bbxdesign.com
+
+*/
+
+body,
+button,
+input,
+select,
+textarea{ color: #333; font-family: Arial, Verdana, sans-serif; font-size: 14px; line-height: 1.5;}
+
+/* Balises block */
+
+.post-content h1{ }
+.post-content h2{ }
+.post-content h3{ }
+.post-content h4{ }
+.post-content h5{ }
+.post-content h6{ }
+.post-content p{ }
+.post-content ul{ }
+.post-content ol{ }
+.post-content blockquote{ }
+.post-content pre{ }
+.post-content address{ }
+.post-content address{ }
+
+/* Balises inline */
+
+.post-content strong{ }
+.post-content em{ }
+.post-content acronym{ }
+.post-content code{ }
+.post-content del{ }
+.post-content ins{ }
+
+/* Classes des images */
+
+.alignleft{ display: inline; float: left;}
+.aligncenter{ clear: both; display: block; margin-left: auto; margin-right: auto;}
+.alignright{ display: inline; float: right;}
+.size-auto{ }
+.size-medium{ }
+.size-large{ }
+.size-full{ }
+.wp-caption{ }
+.wp-caption img{ }
+.gallery{ }
+.gallery .gallery-item{ }
