@@ -1,6 +1,7 @@
 body{
     font-family: $font-title;
     -webkit-font-smoothing : antialiased;
+    color: $black;
 }
 
 
@@ -20,6 +21,7 @@ body{
 
 .header{
     margin-top: 30px;
+    margin-bottom: 30px;
     .logo{
         width: 156px;
         margin: 0 auto;
@@ -30,6 +32,7 @@ body{
 
     .navigation{
         margin-top: 20px;
+        padding: 0;
         li{
             display: inline-block;
             margin: 0 12px;

@@ -35,10 +35,10 @@
                   <div class="col-sm-5 text-right">
                       <ul class="navigation">
                           <li>
-                              <a href="#">Intérieur</a>
+                              <a href="#">Mon compte</a>
                           </li>
                           <li>
-                              <a href="#">Panier <span class="number-cart">(0)</span></a>
+                               <a href="<?php echo wc_get_cart_url(); ?>">Panier <span class="number-cart">(<?php echo WC()->cart->get_cart_contents_count(); ?>)</span></a>
                           </li>
                       </ul>
                   </div>

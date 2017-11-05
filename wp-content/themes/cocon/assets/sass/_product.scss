@@ -1,0 +1,48 @@
+.product{
+    display: block;
+    color: $black;
+    @include transition(.3s);
+
+    &:hover{
+        color: $black;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .info-product{
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 30px rgba(#000, .1);
+
+        .title-product{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .category{
+            font-size: 12px;
+            opacity: .6;
+        }
+        .price-box{
+            margin-top: 10px;
+            .price-info{
+                display: inline-block;
+                margin: 0 2px;
+            }
+
+            .remise{
+                opacity: .4;
+                text-decoration: line-through;
+            }
+            .price{
+                font-weight: 600;
+            }
+        }
+    }
+
+    &.push-to-top{
+        margin-top: 210px;
+    }
+}
