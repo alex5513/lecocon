@@ -1,6 +1,5 @@
-    <footer class="site-footer">
-      <?php bloginfo('name'); ?> est propulsé par <a href="http://wordpress.org">WordPress</a>.
-    </footer>
+    <script src="https://use.typekit.net/fqs5vxx.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <?php wp_footer(); ?>
   </body>
 </html>
