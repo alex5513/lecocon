@@ -1,0 +1,11 @@
+.percent {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -30px;
+}
+
+.percent span {
+    color: #2095f2;
+}

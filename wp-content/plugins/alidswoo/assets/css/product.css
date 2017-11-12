@@ -1,0 +1,57 @@
+ul#adminmenu{padding-top:38px}
+body.post-type-product ul#adminmenu{padding-top:0}
+input[type=text], input[type=password], input[type=checkbox], input[type=color], input[type=date], input[type=datetime],
+input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=radio], input[type=tel],
+input[type=time], input[type=url], input[type=week], input[type=search], textarea{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus, input[type=color]:focus,
+input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus,
+input[type=month]:focus, input[type=number]:focus, input[type=radio]:focus, input[type=tel]:focus, input[type=time]:focus,
+input[type=url]:focus, input[type=week]:focus, input[type=search]:focus, select:focus, textarea:focus{border-color:transparent;
+    -webkit-box-shadow: none;  box-shadow: none;
+}
+#wpbody-content .ellk-options label. #wpbody-content .content-ellk label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+#wpbody-content .content-ellk .panel{
+    margin-left:0;
+    margin-right:0;
+}
+
+.modal.full-width .modal-dialog{width:100%;height:auto;top:0;bottom:0}
+.ellk-modal .modal-dialog{background:transparent}
+.ellk-modal .modal-content{background:transparent;padding:66px 20px 20px}
+.modal.full-height .modal-content{height:auto}
+
+.ellk-transparent, .ellk-transparent.panel:before{background:transparent}
+.ellk-transparent .knob-container{background:#fff;border-radius:50%;-webkit-border-radius:50%;padding:10px}
+.ellk-color-white{color:#fff}
+
+body .ellk-options{font-size:18px;line-height:29px}
+.ellk-options h1, .ellk-options h2, .ellk-options h3,
+.ellk-options h4, .ellk-options h5, .ellk-options h6{font-family:inherit;font-weight: 300;line-height: 1.42;color: rgba(0,0,0,.54)}
+.ellk-options h5{font-size:18px;margin-bottom:14px;}
+.ellk-options .margin-top-20{margin-top:20px}
+.ellk-options .card-overflow{padding-left:10px;padding-right:10px}
+.ellk-options .card{padding:0;min-width:inherit;max-width:inherit}
+.ellk-options .card p{margin:0 0 20px}
+.ellk-options .styled-tabs .nav{margin-top:0}
+.ellk-options .styled-tabs .nav a{text-decoration:none}
+.ellk-options .styled-tabs .nav a:focus{box-shadow: none;-webkit-box-shadow: none}
+.ellk-options .col-item:first-child{margin-top:25px}
+.ellk-options .col-item{text-align:right;}
+.ellk-options .col-item img{max-width: 100px;max-height: 100px;margin: 10px;}
+.ellk-options .list-countries{padding-top:20px}
+.ellk-options .list-countries h4{font-weight:normal}
+
+.modal.full-width .modal-dialog{width:100%;height:auto;top:0;bottom:0}
+.ellk-modal .modal-dialog{background:transparent}
+.ellk-modal .modal-content{background:transparent;padding:66px 0 20px;max-width:1198px;margin:0 auto}
+.modal.full-height .modal-content{height:auto}
+.ellk-modal.modal.full-height.in .modal-dialog{left:0;-webkit-transform:translate3d(0, 0, 0) scale(1);transform:translate3d(0, 0, 0) scale(1);-webkit-font-smoothing: antialiased;}
+.ellk-modal.modal.full-height .modal-dialog{left:0;-webkit-font-smoothing: antialiased;}
+.notice, div.error, div.updated{margin:0 28px 10px 0 !important;}

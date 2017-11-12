@@ -1,0 +1,9 @@
+.info .salePrice{margin-bottom:3px}
+.info .salePrice .value{color:#f60;font-weight:700;font-size:16px}
+.info .salePrice .separator,
+.info .salePrice .unit{color:#999;font-weight:400;font-size:12px}
+.info .price{display:inline-block;padding-top:0;font-size:12px;color:#999;text-decoration:line-through}
+.info .discount{background-color:#f34820;display:inline-block;color:#fff;line-height:18px;padding:0 5px;border-radius:2px;font-size:12px;margin-left:3px}
+.info .rate-block{margin-bottom:3px}
+#post-visibility-select label, .misc-pub-section.misc-pub-post-status label{display: inline-block !important;margin: 0 !important;line-height: 1.5;vertical-align: baseline}
+.img-responsive{max-width:100%}

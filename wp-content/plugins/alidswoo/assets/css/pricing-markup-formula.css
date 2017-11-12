@@ -1,0 +1,25 @@
+
+.form-buttons{
+    margin: 0 0;
+}
+
+table.dataTable.display tbody tr.row-edit:hover,
+.row-formula .row-edit{
+    background: #fff;
+}
+
+.row-formula.single .switcher label{
+    cursor: default!important;
+}
+
+.percent {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -30px;
+}
+
+.percent span {
+    color: #2095f2;
+}
