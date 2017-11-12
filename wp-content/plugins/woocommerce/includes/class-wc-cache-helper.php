@@ -155,29 +155,27 @@ class WC_Cache_Helper {
 		if ( ! is_blog_installed() ) {
 			return;
 		}
-		$page_ids        = array_filter( array( wc_get_page_id( 'cart' ), wc_get_page_id( 'checkout' ), wc_get_page_id( 'myaccount' ) ) );
-		$current_page_id = get_queried_object_id();
+		$page_ids = array_filter( array( wc_get_page_id( 'cart' ), wc_get_page_id( 'checkout' ), wc_get_page_id( 'myaccount' ) ) );
 
-		if ( isset( $_GET['download_file'] ) || in_array( $current_page_id, $page_ids ) ) {
-			self::nocache();
+		if ( isset( $_GET['download_file'] ) || isset( $_GET['add-to-cart'] ) || is_page( $page_ids ) ) {
+			add_filter( 'nocache_headers', array( __CLASS__, 'set_nocache_constants' ) );
+			nocache_headers();
 		}
 	}
 
 	/**
-	 * Set nocache constants and headers.
-	 * @access private
+	 * Set constants to prevent caching by some plugins.
+	 *
+	 * Hooked into nocache_headers filter but does not change headers.
+	 *
+	 * @param  array $value
+	 * @return array
 	 */
-	private static function nocache() {
-		if ( ! defined( 'DONOTCACHEPAGE' ) ) {
-			define( "DONOTCACHEPAGE", true );
-		}
-		if ( ! defined( 'DONOTCACHEOBJECT' ) ) {
-			define( "DONOTCACHEOBJECT", true );
-		}
-		if ( ! defined( 'DONOTCACHEDB' ) ) {
-			define( "DONOTCACHEDB", true );
-		}
-		nocache_headers();
+	public static function set_nocache_constants( $value ) {
+		wc_maybe_define_constant( 'DONOTCACHEPAGE', true );
+		wc_maybe_define_constant( 'DONOTCACHEOBJECT', true );
+		wc_maybe_define_constant( 'DONOTCACHEDB', true );
+		return $value;
 	}
 
 	/**
