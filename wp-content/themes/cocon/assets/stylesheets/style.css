@@ -8918,6 +8918,78 @@ body {
   font-weight: 300;
 }
 
+/* line 1, ../sass/_footer.scss */
+.footer {
+  padding: 60px;
+  background: #1d1d1d;
+}
+/* line 5, ../sass/_footer.scss */
+.footer .logo-footer {
+  max-width: 150px;
+  display: block;
+  width: 100%;
+}
+/* line 9, ../sass/_footer.scss */
+.footer .logo-footer img {
+  width: 100%;
+}
+/* line 14, ../sass/_footer.scss */
+.footer .link-footer {
+  padding-left: 40px;
+}
+/* line 17, ../sass/_footer.scss */
+.footer .link-footer ul li {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+}
+/* line 22, ../sass/_footer.scss */
+.footer .link-footer ul li a {
+  color: #FFF;
+  font-size: 14px;
+}
+/* line 31, ../sass/_footer.scss */
+.footer .newsletter-footer .label-newsletter {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+/* line 39, ../sass/_footer.scss */
+.footer .newsletter-footer input {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  width: calc(100% - 50px);
+  float: left;
+  padding-bottom: 5px;
+  border-radius: 0;
+  font-size: 14px;
+  color: #FFF;
+  line-height: 18px;
+}
+/* line 51, ../sass/_footer.scss */
+.footer .newsletter-footer input[type="submit"] {
+  width: 50px;
+  text-align: right;
+}
+/* line 58, ../sass/_footer.scss */
+.footer .social {
+  margin-top: 10px;
+}
+/* line 60, ../sass/_footer.scss */
+.footer .social li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 63, ../sass/_footer.scss */
+.footer .social li svg {
+  fill: #FFF;
+  height: 14px;
+}
+
 /* line 1, ../sass/_product.scss */
 .product {
   display: block;
