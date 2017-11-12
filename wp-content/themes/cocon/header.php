@@ -35,6 +35,9 @@
                   <div class="col-sm-5 text-right">
                       <ul class="navigation">
                           <li>
+                              <?php echo do_shortcode( '[aws_search_form]' ); ?>
+                          </li>
+                          <li>
                               <a href="#">Mon compte</a>
                           </li>
                           <li>
