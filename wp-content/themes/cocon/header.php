@@ -7,6 +7,15 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+
+      <div class="container-search">
+          <div class="label-search">
+              Votre recherche ici
+          </div>
+          <?php echo do_shortcode( '[aws_search_form]' ); ?>
+
+          <div class="close-popin"></div>
+      </div>
       <div class="pre-header">
           <?php echo __('Service client :', 'cocon_lang'); ?>
           <a href="#">client@lecocon.fr</a>
@@ -40,7 +49,9 @@
                   <div class="col-sm-5 text-right">
                       <ul class="navigation">
                           <li>
-                              <?php echo do_shortcode( '[aws_search_form]' ); ?>
+                              <a href="#" class="link-search">
+                                  Search
+                              </a>
                           </li>
                           <li>
                               <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Mon compte',''); ?>"><?php _e('Mon compte',''); ?></a>

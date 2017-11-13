@@ -112,7 +112,6 @@
                 if ( ( typeof response.tags !== 'undefined' ) && response.tags.length > 0 ) {
 
                     $.each(response.tags, function (i, result) {
-
                         html += '<li class="aws_result_item aws_result_tag">';
                         html += '<a class="aws_result_link" href="' + result.link + '" >';
                         html += '<span class="aws_result_content">';
@@ -138,11 +137,13 @@
                             html += '<span class="aws_result_image">';
                             html += '<img src="' + result.image + '">';
                             html += '</span>';
+
+                            console.log(result);
                         }
 
                         html += '<span class="aws_result_content">';
                         html += '<span class="aws_result_title">' + result.title + '</span>';
-                        
+
                         if ( result.stock_status ) {
                             var statusClass = result.stock_status.status ? 'in' : 'out';
                             html += '<span class="aws_result_stock ' + statusClass + '">';

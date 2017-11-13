@@ -9047,6 +9047,115 @@ body {
   margin-top: 210px;
 }
 
+/* line 1, ../sass/_search.scss */
+.container-search {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  padding: 50px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 13, ../sass/_search.scss */
+.container-search.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 19, ../sass/_search.scss */
+.container-search .label-search {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFF;
+  letter-spacing: -.05em;
+  margin-bottom: 5px;
+}
+/* line 26, ../sass/_search.scss */
+.container-search input[type="text"] {
+  background: transparent;
+  border: 0;
+  font-size: 90px;
+  font-weight: 600;
+  font-family: "aktiv-grotesk" !important;
+  letter-spacing: -.09em;
+  color: #FFF;
+  padding: 0;
+  line-height: 60px;
+}
+/* line 38, ../sass/_search.scss */
+.container-search .close-popin {
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 30;
+  opacity: 1;
+  background: url("../images/close.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 57, ../sass/_search.scss */
+.container-search .close-popin:hover {
+  border: 1px solid white;
+}
+
+/* line 65, ../sass/_search.scss */
+.aws-search-result ul li {
+  border-bottom: 0 !important;
+  display: inline-block;
+  padding: 30px 30px 30px 0;
+}
+
+/* line 70, ../sass/_search.scss */
+.aws-search-result {
+  background: transparent !important;
+  border: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding-top: 30px;
+}
+/* line 76, ../sass/_search.scss */
+.aws-search-result .aws_result_title {
+  color: #FFF !important;
+  font-size: 24px;
+  font-weight: 100;
+}
+/* line 82, ../sass/_search.scss */
+.aws-search-result .aws_result_image {
+  padding-right: 15px !important;
+}
+/* line 86, ../sass/_search.scss */
+.aws-search-result .amount {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* line 93, ../sass/_search.scss */
+.aws-search-result .aws_result_link:hover {
+  background: transparent !important;
+}
+
+/* line 97, ../sass/_search.scss */
+.aws-container .aws-search-field:focus {
+  background: transparent !important;
+}
+
 /* line 1, ../sass/pages/_homepage.scss */
 .push {
   position: relative;

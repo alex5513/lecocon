@@ -72,6 +72,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/functions.js" charset="utf-8"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/events.js" charset="utf-8"></script>
     <script src="https://use.typekit.net/fqs5vxx.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <?php wp_footer(); ?>
