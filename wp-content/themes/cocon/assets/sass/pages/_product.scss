@@ -1,0 +1,204 @@
+.product{
+    .product_title{
+        font-size: 30px;
+        color: $black;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 30px !important;
+    }
+    .product_meta{
+        opacity: .3;
+        color: $black;
+        font-size: 12px;
+        a{
+            color: $black;
+            font-weight: 600;
+        }
+    }
+}
+
+.cat-current-product-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 60px;
+
+    .text-categorie{
+        font-size: 130px;
+        line-height: 115px;
+        color: #F7F7F7;
+        font-weight: 800;
+        letter-spacing: -.05em;
+        white-space: nowrap;
+        position: absolute;
+        text-transform: uppercase;
+        left: 50%;
+        @include translate(-50%, 0);
+    }
+
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+    color: #404040 !important;
+    letter-spacing: -.09em;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    ins{
+        text-decoration: none;
+        font-size: 28px;
+        letter-spacing: -.10em;
+    }
+
+    del{
+        margin-right: 15px;
+        span{
+            font-weight: 500;
+            color: #404040 !important;
+        }
+    }
+    .amount{
+        color: $blue;
+    }
+}
+
+.ttc-price{
+    font-size: 11px;
+    color: $blue;
+    font-weight: 400;
+    margin-left: 5px;
+    letter-spacing: 0;
+}
+
+.links-info-product{
+    clear: both;
+    max-width: 250px;
+    text-align: center;
+
+    li{
+        display: inline-block;
+        font-size: 12px;
+        padding: 0 20px;
+        margin-top: 20px;
+
+        &:first-child{
+            border-right: 1px solid #CCC;
+        }
+        a{
+            color: $black;
+            font-weight: 600;
+        }
+    }
+}
+.container-product{
+    background: #F7F7F7;
+    width: calc(100% - 80px);
+    margin-left: 40px;
+    padding: 30px;
+
+    .woocommerce-product-gallery__wrapper{
+        margin-top: -60px !important;
+    }
+
+    .woocommerce-product-details__short-description{
+        font-size: 16px;
+        color: rgba($black, .4);
+        margin-bottom: 20px;
+        line-height: 22px;
+    }
+
+    .single_add_to_cart_button{
+        background: $blue !important;
+        border-radius: 0 !important;
+        padding: 20px 30px !important;
+        clear: both;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px !important;
+    }
+}
+
+.container-popin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(#FFF, 1);
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+
+    .popin{
+        padding-top: 90px;
+
+        .title{
+            font-size: 55px;
+            color: #222;
+            font-family: $font-title;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .author{
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .date{
+            display: inline-block;
+            margin-left: 10px;
+            opacity: .6;
+            font-size: 14px;
+        }
+        .commentaire{
+            margin-top: 15px;
+            padding-bottom: 15px;
+            font-size: 14px;
+            opacity: .9;
+            border-bottom: 1px solid rgba($black, .1);
+        }
+    }
+}
+
+
+.title-site{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.container-related{
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+body{
+    .woocommerce-error, .woocommerce-info, .woocommerce-message{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: $black;
+        font-size: 14px;
+        z-index: 3000;
+        color: #FFF;
+        @include transition(.3s);
+        @include translate(0, -100%);
+
+        .button{
+            display: none;
+        }
+
+        &.is-visible{
+            @include translate(0, -0%);
+        }
+    }
+}
+.single{
+}

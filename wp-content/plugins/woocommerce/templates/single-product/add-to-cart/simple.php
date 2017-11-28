@@ -57,6 +57,15 @@ if ( $product->is_in_stock() ) : ?>
 
 		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
+		<ul class="links-info-product">
+			<li>
+				<a href="#">Livraison</a>
+			</li>
+			<li>
+				<a href="#">Avis</a>
+			</li>
+		</ul>
+
 		<?php
 			/**
 			 * @since 2.1.0.
@@ -64,6 +73,24 @@ if ( $product->is_in_stock() ) : ?>
 			do_action( 'woocommerce_after_add_to_cart_button' );
 		?>
 	</form>
+
+
+	<div class="container-popin reviews hidden">
+		<div class="popin">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="title">
+							Les avis
+						</div>
+					</div>
+					<div class="col-sm-8 col-sm-offset-2">
+						<?php echo get_woo_reviews(); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 

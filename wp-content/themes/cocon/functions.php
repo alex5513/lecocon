@@ -82,3 +82,29 @@ function get_product_variant_price() {
 		</div>
 	<?php endif;
 }
+
+
+function wpc_show_admin_bar() {
+	return false;
+}
+add_filter('show_admin_bar' , 'wpc_show_admin_bar');
+
+function get_woo_reviews()
+{
+$count = 0;
+$html_r = "";
+$title="";
+$args = array(
+'post_type' => 'product'
+);
+
+$comments_query = new WP_Comment_Query;
+$comments = $comments_query->query( $args );
+
+foreach($comments as $comment) :
+$title = ''.get_the_title( $comment->comment_post_ID ).'';
+$html_r = $html_r."<div class='author'>".$comment->comment_author."</div><div class='date'>".$comment->comment_date. "</div>";
+$html_r = $html_r. "<div class='commentaire'>" .$comment->comment_content."</div>";
+endforeach;
+return $html_r;
+}

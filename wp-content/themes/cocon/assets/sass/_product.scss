@@ -46,3 +46,16 @@
         margin-top: 210px;
     }
 }
+
+body.woocommerce span.onsale{
+    background: $pink;
+    width: 60px;
+    text-align: center;
+    line-height: 56px;
+    height: 60px;
+    font-size: 11px;
+}
+
+body.single span.onsale{
+    margin-top: -70px;
+}

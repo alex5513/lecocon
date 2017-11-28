@@ -1,0 +1,149 @@
+.site-main{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.post-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: $font-title;
+    text-transform: none;
+    letter-spacing: -.02em;
+}
+
+body{
+    .woocommerce table.shop_table{
+        border-radius: 0;
+    }
+    .woocommerce table.shop_table th{
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .woocommerce a.remove{
+        color: $black !important;
+        font-size: 20px;
+    }
+    .woocommerce table{
+        td{
+            font-size: 13px;
+        }
+        a{
+            color: #000;
+        }
+    }
+    .woocommerce table.cart td.actions{
+        padding: 20px;
+        background: #F7F7F7;
+    }
+
+    .woocommerce input.button{
+        background: $black;
+        color: #FFF;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 17px 20px;
+        font-size: 12px;
+
+        &:hover{
+            color: #FFF !important;
+        }
+    }
+
+    .woocommerce{
+        .coupon{
+            input.button{
+                background: $blue;
+            }
+
+            input[type="text"]{
+                width: 120px !important;
+                margin-right: 0 !important;
+            }
+        }
+
+        .select2-container{
+            display: none;
+        }
+
+        .cart_totals{
+            margin-top: 30px;
+        }
+
+        h2{
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+
+        input[type="password"], input[type="text"], input[type="phone"], input[type="email"], input[type="tel"], select{
+            width: 100% !important;
+            height: 46px !important;
+            line-height: 46px !important;
+            padding: 15px !important;
+            border: 1px solid #DDD !important;
+            -webkit-appearance: none;
+            font-size: 13px;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        textarea{
+            border: 1px solid #DDD !important;
+            border-radius: 0;
+            height: 150px !important;
+            resize: none;
+            font-size: 13px;
+            padding: 15px;
+        }
+
+        select{
+            overflow: visible;
+            position: static;
+            padding: 0 15px!important;
+            background: #FFF;
+            border-radius: 0;
+            background-image: url('../images/arrow-select.svg');
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: calc(100% - 15px) 50%;
+        }
+
+    }
+    .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled,
+    .woocommerce #respond input#submit:disabled[disabled],
+    .woocommerce a.button.disabled, .woocommerce a.button:disabled,
+    .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled,
+    .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled],
+    .woocommerce input.button.disabled, .woocommerce input.button:disabled,
+    .woocommerce input.button:disabled[disabled]{
+        padding: inherit;
+        color: #FFF;
+        background: $black;
+    }
+
+    .woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
+    .woocommerce button.button.alt,
+    .woocommerce input.button.alt{
+        background: $blue;
+        border-radius: 0;
+        letter-spacing: -.02em;
+
+        &:hover{
+            background: #1e5c96;
+        }
+    }
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{
+    position: static;
+    margin-left: 0;
+    margin-right: 5px;
+}

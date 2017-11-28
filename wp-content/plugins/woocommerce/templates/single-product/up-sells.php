@@ -22,9 +22,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $upsells ) : ?>
 
-	<section class="up-sells upsells products">
+	<section class="up-sells upsells products row">
 
-		<h2><?php esc_html_e( 'You may also like&hellip;', 'woocommerce' ) ?></h2>
+		<div class="col-sm-12 text-center container-related">
+			<div class="text-bg">
+                Exceptions
+            </div>
+			<h2 class="title-site"><?php echo __( 'À ne pas manquer', 'cocon' ); ?></h2>
+		</div>
 
 		<?php woocommerce_product_loop_start(); ?>
 
@@ -33,9 +38,9 @@ if ( $upsells ) : ?>
 				<?php
 				 	$post_object = get_post( $upsell->get_id() );
 
-					setup_postdata( $GLOBALS['post'] =& $post_object );
+					setup_postdata( $GLOBALS['post'] =& $post_object ); ?>
 
-					wc_get_template_part( 'content', 'product' ); ?>
+					<?php echo clrz_get_template_part('', 'product-related'); ?>
 
 			<?php endforeach; ?>
 
