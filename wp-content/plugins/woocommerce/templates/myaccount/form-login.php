@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<p class="form-row">
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
 				<input type="submit" class="woocommerce-Button button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
-				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
+				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox">
 					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php _e( 'Remember me', 'woocommerce' ); ?></span>
 				</label>
 			</p>

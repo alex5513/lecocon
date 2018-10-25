@@ -1,6 +1,9 @@
 function search(){
     jQuery('.link-search').click(function(){
         jQuery('.container-search').addClass('is-visible');
+        setTimeout(function(){
+            jQuery('.aws-search-field').focus();
+        }, 100);
     });
 
     jQuery('.close-popin').click(function(){

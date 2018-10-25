@@ -192,13 +192,19 @@ body{
         @include translate(0, -100%);
 
         .button{
-            display: none;
+            display: none !important;
         }
 
         &.is-visible{
             @include translate(0, -0%);
         }
     }
-}
-.single{
+
+    .woocommerce-message{
+        border-top-color: $blue;
+
+        &:before{
+            color: $blue;
+        }
+    }
 }

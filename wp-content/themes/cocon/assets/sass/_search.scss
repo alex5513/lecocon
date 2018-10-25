@@ -53,6 +53,7 @@
         border-radius: 50%;
         border: 1px solid rgba(#FFF, .3);
         @include transition(.3s);
+        cursor: pointer;
 
         &:hover{
             border: 1px solid rgba(#FFF, 1);
@@ -61,6 +62,21 @@
 
 }
 
+.aws-container .aws-search-form:after{
+    display: none !important;
+}
+
+.aws-search-result a{
+    color: #FFF;
+    .aws_onsale{
+        color: #FFF;
+        background: $blue;
+    }
+}
+
+.aws-search-result .aws_result_price del, .aws-search-result .aws_result_price ins{
+    color: #444;
+}
 
 .aws-search-result ul li{
     border-bottom: 0 !important;

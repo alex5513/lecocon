@@ -147,3 +147,23 @@ body{
     margin-left: 0;
     margin-right: 5px;
 }
+
+.cart-empty{
+    text-align: center;
+}
+
+.return-to-shop{
+    margin-top: 30px;
+    text-align: center;
+
+    a{
+        background: #357dc0 !important;
+        border-radius: 0 !important;
+        padding: 20px 30px !important;
+        clear: both;
+        width: 250px;
+        text-align: center;
+        margin-top: 30px !important;
+        color: #FFF !important;
+    }
+}

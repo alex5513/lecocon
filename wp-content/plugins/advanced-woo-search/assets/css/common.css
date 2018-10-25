@@ -182,20 +182,6 @@
     width: 47px;
 }
 
-.aws-search-result .aws_onsale {
-    background: #77a464 none repeat scroll 0 0;
-    color: #fff;
-    display: block;
-    float: right;
-    height: 20px;
-    padding-top: 2px;
-    position: relative;
-    right: -25px;
-    text-align: center;
-    top: 3px;
-    transform: rotate(45deg);
-    width: 77px;
-}
 
 .aws-search-result .aws_no_result {
     line-height: 40px;

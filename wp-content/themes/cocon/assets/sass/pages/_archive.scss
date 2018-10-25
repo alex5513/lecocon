@@ -1,0 +1,48 @@
+.container-archive{
+    margin-top: 90px;
+
+    .page-title{
+        font-size: 70px;
+        font-weight: 800;
+        margin-bottom: 90px;
+        padding-top: 30px;
+    }
+
+    .woocommerce-result-count{
+        display: none;
+    }
+
+    .woocommerce-breadcrumb{
+        display: none;
+    }
+}
+
+.woocommerce-page .container-archive .woocommerce-ordering{
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+
+    select{
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        background: url('../images/arrow-select.svg');
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: 8px;
+        border-bottom: 1px solid rgba($black, .1);
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-right: 20px;
+        font-size: 14px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}

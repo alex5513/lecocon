@@ -1,0 +1,93 @@
+body{
+    .woocommerce form.login, .woocommerce form.register{
+        border-radius: 0;
+        border-color: #f0f0f0;
+        padding: 30px;
+
+        .woocommerce-form__label-for-checkbox{
+            margin-top: 20px;
+
+            .woocommerce-form__input-checkbox{
+                margin-right: 5px;
+            }
+        }
+
+        .lost_password{
+            a{
+                color: #222;
+                text-decoration: underline;
+            }
+        }
+
+        .button{
+            margin-top: 20px;
+        }
+    }
+
+    .woocommerce form.register{
+        background: #F7F7F7;
+    }
+
+    &.woocommerce-account .woocommerce-MyAccount-content{
+        max-width: 800px;
+        margin: 0 auto;
+        float: none;
+        line-height: 26px;
+
+        a{
+            color: $black;
+            text-decoration: underline;
+            background: transparent;
+            font-style: italic;
+        }
+
+        input.button{
+            margin-top: 15px;
+        }
+
+        fieldset{
+            margin-top: 30px;
+        }
+
+        legend{
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+    }
+
+    .woocommerce-Addresses{
+        margin-top: 30px;
+    }
+    .woocommerce-Address{
+        background: #F7F7F7;
+        padding: 30px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+.woocommerce-myAccount-navigation{
+    background: #F7F7F7;
+    text-align: center;
+    margin-bottom: 60px;
+    li{
+        display: inline-block;
+        padding: 30px 0 27px;
+        margin: 0 15px;
+
+        &.is-active{
+            border-bottom: 2px solid #000;
+        }
+        a{
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}
+
+
+ body .woocommerce button.button.disabled, body .woocommerce button.button:disabled, body .woocommerce button.button:disabled[disabled], body .woocommerce input.button.disabled, body .woocommerce input.button:disabled, body .woocommerce input.button:disabled[disabled]{
+     padding: 17px 20px;
+ }
